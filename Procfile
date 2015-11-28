@@ -1,0 +1,1 @@
+web: gunicorn yelp_tinder:app --log-file=-

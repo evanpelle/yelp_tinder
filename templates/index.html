@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript"
+    src="{{ url_for('static', filename='../static/js/jquery-2.1.4.min.js') }}"></script>
+  <script type="text/javascript"
+    src="{{ url_for('static', filename='../static/js/bootstrap.js') }}"></script>
+  <script type="text/javascript"
+    src="{{ url_for('static', filename='../static/js/index_script.js') }}"></script>
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='../static/css/bootstrap.css') }}">
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='../static/css/bootstrap-theme.min.css') }}"/>
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='../static/css/style.css') }}"/>
+ 
+</head>
+
+<div class="wrapper container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <br><br>
+      <h1>Yelp Meets Tinder</h1>
+      <br/><br/><br/>
+      <h2>Just Enter Your City To Begin</h2>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <br>
+      <form action="swipe">
+        <input id="city-input" type="text" name="city">
+        <br><br><br>
+        <input id="start-button" class="btn-primary" type="submit" value="Let's Get Started">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
